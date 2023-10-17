@@ -1,3 +1,7 @@
+body {
+  margin: 0ы;
+}
+
 .header {
   font-family: "M PLUS 1", sans-serif;
   text-align: center;
@@ -110,4 +114,52 @@
   font-family: Inika;
   font-size: 64px;
   font-weight: 700;
+}
+
+.footer {
+  background: #2F4A4B;
+  text-align: center;
+  margin-top: 21px;
+  padding-bottom: 27px;
+}
+
+.footer-title {
+  color: #3E45E8;
+  font-family: 'M PLUS 1';
+  font-size: 48px;
+  font-weight: 400;
+  letter-spacing: 4.8px;
+  margin-bottom: 21px;
+}
+
+.footer-title-yellow {
+  color: #DFE31E;
+}
+
+.footer-mail {
+  color: #A89D9D;
+  font-family: 'Marcellus SC';
+  font-size: 36px;
+  font-weight: 400;
+  letter-spacing: 3.6px;
+  margin-bottom: 21px;
+}
+
+.footer-mail a, 
+.footer-phone a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.footer-phone {
+  color: #A89D9D;
+  font-family: 'Marcellus SC';
+  font-size: 36px;
+  font-weight: 400;
+  letter-spacing: 3.6px;
+  margin-bottom: 21px;
+}
+
+.social-media {
+  height: 64px;
 }
