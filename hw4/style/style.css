@@ -1,0 +1,61 @@
+body {
+ margin: 0;
+}
+
+/* HEADER */
+
+.header {
+  overflow: auto;
+  height: 90px;
+  background: #202846;
+  box-sizing: border-box;
+  padding: 10px 25px 10px 5vw;
+}
+
+.header div {
+  display: inline-block;
+}
+
+.header-logo {
+  margin-right: 12vw;
+  overflow: auto;
+}
+
+.header-text {
+  overflow: auto;
+  color: #FFF;
+  text-align: center;
+  font-family: 'PT Sans', sans-serif;
+  font-size: 24px;
+  font-weight: 700;
+  margin-bottom: 22px;
+  margin-right: 3vw;
+}
+
+.header-ua {
+  overflow: auto;
+  color: #FFF;
+  text-align: center;
+  font-family: 'PT Sans', sans-serif;
+  font-size: 24px;
+  font-weight: 700;
+  margin-bottom: 22px;
+}
+
+/* BOOKING */
+
+.booking {
+  color: #202846;
+  font-family: 'PT Sans', sans-serif;
+  font-size: 48px;
+  font-style: italic;
+  font-weight: 400;
+  background: #C6C6DC;
+  padding: 4vh 10vw;
+}
+
+/* ORDERS */
+
+.container {
+  margin: 56px 10vw
+}
