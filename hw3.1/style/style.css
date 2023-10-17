@@ -1,0 +1,40 @@
+.box-black {
+  display: inline-block;
+  background: black;
+  text-align: center;
+  padding: 100px;
+  box-sizing: border-box;
+}
+
+.diia {
+  margin-bottom: 32px;
+}
+
+.flag-ua {
+  margin: auto;
+  width: 80px;
+  height: 60px;
+  border-radius: 6px;
+  background: linear-gradient(180deg, #2137FC 0%, #2137FB 50.01%, #FFD84B 50.04%, #FFD84B 100%);
+}
+
+.bg-ua {
+  padding: 100px 40px;
+  box-sizing: border-box;
+  display: inline-block;
+  background: linear-gradient(180deg, #2137FC 0%, #2137FB 50.01%, #FFD84B 50.04%, #FFD84B 100%);
+}
+
+.speechify {
+  margin: auto;
+  box-sizing: border-box;
+}
+
+.circle {
+  border-radius: 50%;
+  height: 500px;
+}
+
+.bottom {
+  margin-top: 40%;
+}
