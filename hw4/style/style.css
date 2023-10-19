@@ -54,7 +54,7 @@ div::-webkit-scrollbar {
 
 /* BOOKING */
 
-.booking {
+.title {
   color: #202846;
   font-family: 'PT Sans', sans-serif;
   font-size: 48px;
@@ -160,4 +160,25 @@ hr {
   font-size: 23px;
   font-weight: 400;
   padding: 17px 24px;
+}
+
+/* Особистий кабінет */
+
+.account {
+  display: flex;
+  flex-direction: row;
+  background: #BDBDC6;
+}
+
+.account-settings {
+  display: flex;
+  flex-direction: column;
+}
+
+.account-information {
+  color: #353C57;
+  font-family: 'PT Sans';
+  font-size: 36px;
+  font-style: italic;
+  font-weight: 700;
 }
