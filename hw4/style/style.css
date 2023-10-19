@@ -2,10 +2,30 @@ body {
  margin: 0;
 }
 
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+
+a:hover {
+  color: rgba(239, 7, 91, 1);
+}
+
+/* UP! */
+
 .up {
   position: fixed;
   bottom: 55px;
   right: 55px;
+}
+
+.up circle {
+  transition: all 0.15s;
+}
+
+.up circle:hover {
+  fill: rgba(239, 7, 91, 1);
 }
 
 /* HEADER */
@@ -62,6 +82,7 @@ div::-webkit-scrollbar {
   font-weight: 400;
   background: #C6C6DC;
   padding: 4vh 10vw;
+  margin-bottom: 41px;
 }
 
 /* ORDERS */
@@ -88,6 +109,10 @@ div::-webkit-scrollbar {
   right: 17px;
 }
 
+.order-star svg path {
+  transition: all 0.15s; 
+}
+
 .order-star svg path:hover {
   fill: yellow;
 }
@@ -104,6 +129,7 @@ div::-webkit-scrollbar {
   font-size: 24px;
   font-weight: 400;
   background: rgba(32, 40, 70, 1);
+  transition: all 0.15s;
 }
 
 .order-details:hover {
@@ -165,20 +191,138 @@ hr {
 /* Особистий кабінет */
 
 .account {
+  padding: 70px 140px;
   display: flex;
   flex-direction: row;
   background: #BDBDC6;
+  box-sizing: border-box;
+  height: 498px;
+  width: 1318px;
+  justify-content: space-around;
+  margin: 0 auto 52px
 }
 
 .account-settings {
+  width: 250px;
   display: flex;
   flex-direction: column;
 }
 
+.account-settings div {
+  text-align: center;
+  border-radius: 50px;
+  background:#484A54;
+  padding: 10px 10px;
+  margin-bottom: 22px;
+
+  color: #FFF;
+  text-align: center;
+  font-family: 'PT Sans';
+  font-size: 24px;
+  font-weight: 400;
+  transition: all 0.15s;
+}
+
+.account-settings div:hover {
+  background: rgba(105, 116, 155, 1);
+}
+
+.account-settings img {
+  border-radius: 208px;
+  width: 196px;
+  margin: 0 auto 38px;
+}
+
 .account-information {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
   color: #353C57;
   font-family: 'PT Sans';
   font-size: 36px;
   font-style: italic;
   font-weight: 700;
+}
+
+.account-information div:nth-child(-n + 4) {
+  border-bottom: 4px solid white;
+  margin-bottom: 5px;
+  padding-bottom: 10px;
+}
+
+.font-normal {
+  font-weight: 400;
+}
+
+.logout {
+  display: flex;
+  justify-content: space-around;
+  margin: 0 0 221px;
+  box-sizing: border-box;
+  transition: all 0.15s;
+}
+
+.logout div {
+  background: rgba(32, 40, 70, 1);
+  padding: 10px 58px;
+  border-radius: 50px;
+
+  color: #FFF;
+  text-align: center;
+  font-family: 'PT Sans';
+  font-size: 27px;
+
+  transition: all 0.15s;
+}
+
+.logout div:hover {
+  background: rgba(239, 7, 91, 1);
+}
+
+.contacts {
+  width: 90%;
+  margin: 0 10vw 64px;
+  display: inline-block;
+  color: #000;
+  font-family: 'PT Sans';
+  font-size: 32px;
+}
+
+.contacts-box {
+  display: inline-block;
+  vertical-align: top;
+  margin-right: 100px;
+  margin-bottom: 52px;
+  height: 150px;
+}
+
+.contacts-title {
+  margin-left: 15px;
+}
+
+.center {
+  text-align: center;
+}
+
+.contacts div hr:nth-child(-n + 4) {
+  background: #000;
+}
+
+.contacts-geo {
+  border: 4px solid rgba(0, 0, 0, 0.05);
+  border-radius: 49px;
+  height: 340px;
+}
+
+/* COPYRIGHT */
+
+.copyright {
+  color: #EEECF1;
+  font-family: 'PT Sans';
+  font-size: 36px;
+  font-style: italic;
+  height: 90px;
+  background: #202846;
+  box-sizing: border-box;
+  padding: 21px 60px;
 }
