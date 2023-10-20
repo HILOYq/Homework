@@ -1,0 +1,48 @@
+body, ul {
+  background: #212529;
+  margin: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+.header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  box-sizing: border-box;
+  padding: 25px 50px;
+}
+
+.nav {
+  display: flex;
+  flex-direction: row;
+  list-style: none;
+}
+
+.nav-item > a, .btn-hireme {
+  padding: 10px 12.5px;
+  color: #FFF;
+  font-family: Poppins;
+  font-size: 18px;
+  font-weight: 600;
+  text-transform: capitalize;
+
+  transition: all 0.3s;
+}
+
+.nav-item > a:hover {
+  color: #FFB742;
+}
+
+.btn-hireme {
+  border-radius: 50px;
+  border: 2px solid #FFB742;
+  background: #FFB742;
+  padding: 12px 26px;
+
+  color: #212529;
+  font-weight: 700;
+}
