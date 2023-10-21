@@ -9,6 +9,7 @@ body, ul {
 
 a {
   text-decoration: none;
+  color: inherit  ;
 }
 
 .btn-hireme {
@@ -224,6 +225,7 @@ a {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  margin-bottom: 120px;
 }
 
 .works-title {
@@ -231,4 +233,104 @@ a {
   font-family: Roboto;
   font-size: 4.8rem;
   font-weight: 700;
+  padding: 10px 0 0 0;
+  margin-bottom: 30px;
+}
+
+.works-list {
+  display: flex;
+  flex-direction: row;
+  gap: 24px;
+  margin-bottom: 50px;
+}
+
+.works-list-item {
+  list-style: none;
+  color: #FFF;
+  font-family: Poppins;
+  font-size: 1.6rem;
+  font-weight: 600;
+  padding: 5px 20px;
+
+  transition: all 0.3s;
+  border-radius: 3px;
+}
+
+.works-list-item:hover {
+  background: #FFB742;
+  color: #212529;
+}
+
+.works-img {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+}
+
+.works-img-items {
+  display: flex;
+  flex-direction: row;
+  gap: 32px;
+}
+
+/* FOOTER */
+.footer {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  background: #1C1C1C;
+  padding: 140px 50px;
+  gap: 150px;
+}
+
+.footer-container {
+  display: flex;
+  flex-direction: column;
+  max-width: 320px;
+}
+
+.footer-ownername {
+  color: #FFB742;
+  font-family: Poppins;
+  font-size: 3.2rem;
+  font-weight: 700;
+  margin-bottom: 32px;
+}
+
+.footer-ownername-description {
+  color: #D4D4D4;
+  font-family: "Work Sans";
+  font-size: 1.6rem;
+  font-weight: 600;
+  max-width: 250px;
+}
+
+.footer-title {
+  color: #F5FBF2;
+  font-family: "Work Sans";
+  font-size: 2.2rem;
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+
+.footer-list {
+  display: flex;
+  flex-direction: column;
+  list-style: none;
+  padding: 0;
+  gap: 15px;
+  background: #1C1C1C;
+}
+
+.footer-list-item {
+  color: #7B7B7B;
+  font-family: "Work Sans";
+  font-size: 1.8rem;
+  font-weight: 500;
+
+  transition: all 0.3s;
+}
+
+.footer-list-item:hover {
+  color: #ffffff;
 }
