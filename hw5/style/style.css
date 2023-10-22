@@ -65,7 +65,7 @@ a {
 }
 
 .nav-item > a {
-  padding: 10px 12.5px;
+  margin: 10px 12.5px;
   color: #FFF;
   font-family: Poppins;
   font-size: 1.8rem;
