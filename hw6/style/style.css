@@ -1,0 +1,139 @@
+body {
+  margin: 0;
+  background: #F9F9F9;
+}
+
+label {
+  display: block;
+  margin-bottom: 8px;
+}
+
+.margin0 {
+  margin: 0;
+}
+
+input, select {
+  width: 100%;
+  padding: 8px 10px;
+  border-radius: 4px;
+  border: 1px solid var(--neutrals-grey-40, #ADADAD);
+  background: var(--brand-colors-white, #FFF);
+}
+
+input::placeholder {
+  color: var(--neutrals-grey-60, #747474);
+  font-family: "Public Sans";
+  font-size: 16px;
+  font-weight: 400;
+}
+
+.line {
+  width: 85%;
+  height: 1px;
+  background: #D1D1D1;
+  margin-top: 32px;
+}
+input {
+  font-family: "Public Sans";
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+}
+
+select {
+  font-family: "Public Sans";
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+}
+
+input:read-only {
+  background: var(--neutrals-grey-10, #EFEFEF);
+  color: var(--neutrals-grey-60, #747474);
+}
+
+.placeholder-center {
+  text-align: center;
+}
+
+.header {
+  display: flex;
+  align-self: start;
+  justify-content: center;
+  color: var(--brand-colors-grey-100-text, #171717);
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  min-width: 700px;
+  max-width: 1000px;
+  padding: 43px;
+
+  color: var(--brand-colors-grey-100-text, #171717);
+  font-family: "Public Sans";
+  font-size: 16px;
+  font-weight: 500;
+}
+
+.form {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 5%;
+}
+
+.mandatory {
+  font-size: 14px;
+  font-weight: 400;
+  margin-bottom: 24px;
+}
+
+.red-text {
+  color: #D83933;
+}
+
+.title {
+  font-size: 20px;
+  font-weight: 700;
+  margin-bottom: 32px;
+}
+
+.input   {
+  display: flex;
+  flex-direction: column;
+  min-width: 40%;
+}
+
+.input-checkbox {
+  width: 40%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 8px;
+}
+.input-checkbox input {
+  max-width: 24px;
+}
+
+.search {
+  background-image: url(../Group.svg);
+  background-repeat: no-repeat;
+  background-position: 97%;
+}
+
+.grey option {
+  color: var(--neutrals-grey-60, #747474);
+}
+
+.black::placeholder {
+  color: var(--brand-colors-grey-100-text, #171717);
+}
+
+.blue::placeholder {
+  color: var(--brand-colors-primary-color, #0050D8);
+}

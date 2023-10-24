@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Public+Sans:wght@400;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./style/style.css">
+  <title>Input prac</title>
+</head>
+<body>
+  <header>
+    <div class="container"><div class="header">Intake Main Flow</div></div>
+  </header>
+  <section>
+    <div class="container">
+      <div class="mandatory"><span class="red-text">*</span> Mandatory field</div>
+      <div class="title">Information</div>
+      <form class="form">
+        <p class="input">
+          <label for="intake">Intake Type<span class="red-text">* (select)</span></label>
+          <select id="intake">
+            <option value="Referral">Referral</option>
+            <option value="Referral2">Referral2</option>
+            <option value="Referral3">Referral3</option>
+          </select>
+        </p>
+
+        <p class="input">
+          <label for="eidj">Enrollment Initiation Date jquery</label>
+          <input type="date" id="eidj" value="2021-05-11" readonly>
+        </p>
+
+        <p class="input">
+          <label for="phone">phone</label>
+          <input type="tel" id="phone">
+        </p>
+
+        <p class="input">
+          <label for="child">Application Category<span class="red-text">*</span></label>
+          <input type="text" id="child" list="child-support" required>
+          <datalist id="child-support">
+            <option value="Child Support">
+            <option value="Child Support2">
+            <option value="Child Support3">
+          </datalist>
+        </p>
+
+        <p class="input">
+          <label for="email">email</label>
+          <input type="email" id="email">
+        </p>
+
+        <p class="input">
+          <label for="esd">Enrollment Submission Date (Optional)</label>
+          <input class="placeholder-center" type="date" id="esd" value="2021-05-11" readonly>
+        </p>
+
+        <p class="input">
+          <label for="appx">Application Registration (Optional)</label>
+          <input type="text" id="appx" list="app">
+          <datalist id="app">
+            <option value="APP0000116">
+            <option value="APP00001162">
+            <option value="APP00001163">
+          </datalist>
+        </p>
+
+        <p class="input">
+          <input type="hidden">
+        </p>
+
+        <p class="input">
+          <label for="aird">Additional Information Requested Date (Optional)</label>
+          <input class="placeholder-center" type="date" id="aird" value="2021-05-13" readonly>
+        </p>
+
+        <p class="input-checkbox">
+          <input type="checkbox" id="purged">
+          <label class="margin0" for="purged">Purged</label>
+        </p>
+
+        <p class="input">
+          <label for="remaining-days">Remaining Days Before Referral is Purged (Optional)</label>
+          <input type="number" id="remaining-days" value="13">
+        </p>
+
+        <p class="input">
+          <label for="efr">Exempt from Paternity (Optional)   (select)</label>
+          <select id="efr">
+            <option value="No">No</option>
+            <option value="No2">No2</option>
+            <option value="No3">No3</option>
+          </select>
+        </p>
+
+        <p class="input">
+          <label for="aird">Fee Payment Date (Optional)</label>
+          <input class="placeholder-center" type="date" id="aird" value="2021-05-13">
+        </p>
+
+        <p class="input">
+          <label for="enrollment ">Enrollment Status (Optional)</label>
+          <input type="text" id="enrollment" list="enrollment-list">
+          <datalist id="enrollment-list">
+            <option value="Worklisted">
+            <option value="Worklisted2">
+            <option value="Worklisted3">
+          </datalist>
+        </p>
+
+        <p class="input-checkbox">
+          <input type="checkbox" id="fee">
+          <label class="margin0" for="fee">Application Fee Processed</label>
+        </p>
+      </form>
+      <div class="line"></div>
+    </div>
+  </section>
+
+  <section>
+    <div class="container">
+      <div class="title">Maternity Information</div>
+      <form class="form">
+        <p class="input-checkbox">
+          <input type="checkbox" id="fee">
+          <label class="margin0" for="fee">Are you requesting child support services for an
+            unborn child?</label>
+        </p>
+
+        <p class="input">
+          <label for="biological-parent">Other known biological parent? (Optional)</label>
+          <input type="text" id="biological-parent" list="biological-parent-list">
+          <datalist id="biological-parent-list">
+            <option value="None">
+            <option value="None2">
+            <option value="None3">
+          </datalist>
+        </p>
+      </form>
+      <div class="line"></div>
+    </div>
+  </section>
+
+  <section>
+    <div class="container">
+      <div class="title">Official Use</div>
+      <form class="form">
+        <p class="input">
+          <label for="case-category">Case Category (select)</label>
+          <select id="case-category">
+            <option value="Active IV-A">Active IV-A</option>
+            <option value="Active IV-A2">Active IV-A2</option>
+            <option value="Active IV-A3">Active IV-A3</option>
+          </select>
+        </p>
+
+        <p class="input">
+          <label for="indicator">IV-D Indicator<span class="red-text">*</span></label>
+          <input type="text" id="indicator" list="indicator-list" required>
+          <datalist id="indicator-list">
+            <option value="Non-IV-D">
+            <option value="Non-IV-D2">
+            <option value="Non-IV-D3">
+          </datalist>
+        </p>
+
+        <p class="input">
+          <label for="arrears-indicator">Arrears Only Indicator (Optional)</label>
+          <select class="grey" id="arrears-indicator">
+            <option disabled selected value="None">None</option>
+            <option value="None2">None2</option>
+            <option value="None3">None3</option>
+          </select>
+        </p>
+
+        <p class="input">
+          <label for="intergovernmental-c-c">Intergovernmental Case Category (Optional)</label>
+          <select class="grey" id="intergovernmental-c-c">
+            <option disabled selected value="None">None</option>
+            <option value="None2">None2</option>
+            <option value="None3">None3</option>
+          </select>
+        </p>
+
+        <p class="input">
+          <label for="assigned-county">Assigned County of Ownership (Optional)</label>
+          <select class="grey" id="assigned-county">
+            <option disabled selected value="None">None</option>
+            <option value="None2">None2</option>
+            <option value="None3">None3</option>
+          </select>
+        </p>
+
+        <p class="input">
+          <label for="intergovernmental-c-t">Intergovernmental Case Type (Optional)</label>
+          <select class="grey" id="intergovernmental-c-t">
+            <option disabled selected value="None">None</option>
+            <option value="None2">None2</option>
+            <option value="None3">None3</option>
+          </select>
+        </p>
+
+        <p class="input">
+          <label for="intergovernmental-c-s">Intergovermental Case Status (details)</label>
+          <select class="grey" id="intergovernmental-c-s">
+            <option disabled selected value="None">None</option>
+            <option value="None2">None2</option>
+            <option value="None3">None3</option>
+          </select>
+        </p>
+
+        <p class="input">
+          <label for="case-number">Case Number</label>
+          <input class="search" id="case-number" type="search" placeholder="Search Case Number">
+        </p>
+
+        <p class="input">
+          <label for="applicant">Special Handling Indicator for Applicant (Optional)</label>
+          <select class="grey" id="applicant">
+            <option disabled selected value="None">None</option>
+            <option value="None2">None2</option>
+            <option value="None3">None3</option>
+          </select>
+        </p>
+
+        <p class="input">
+          <label for="case-number">Referral Number</label>
+          <input class="search" id="case-number" type="search" placeholder="Search Referral Number">
+        </p>
+
+        <p class="input">
+          <label for="other-parent">Special Handling Indicator for Other Parent
+            (Optional)</label>
+          <select class="grey" id="other-parent">
+            <option disabled selected value="None">None</option>
+            <option value="None2">None2</option>
+            <option value="None3">None3</option>
+          </select>
+        </p>
+      </form>
+      <div class="line"></div>
+    </div> 
+  </section>
+
+  <section>
+    <div class="container">
+      <div class="title">System Information</div>
+      <form class="form">
+        <p class="input">
+          <label for="enrollment">Enrollment Taken by User</label>
+          <input class="search black" id="enrollment" type="search" placeholder="Search Input">
+        </p>
+
+        <p class="input">
+          <label for="intake">Intake Supervisor (Optional)</label>
+          <input class="search" id="intake" type="search" placeholder="Search">
+        </p>
+
+        <p class="input">
+          <label for="worker">Worker (Optional)</label>
+          <input class="search black" id="worker" type="search" placeholder="Search Input">
+        </p>
+
+        <p class="input">
+          <label for="owner">Owner (Optional)</label>
+          <input class="search blue" id="owner" type="search" placeholder="Rajaneesh Banal">
+        </p>
+      </form>
+      <div class="line"></div>
+      
+    </div>
+  </section>
+</body>
+</html>
