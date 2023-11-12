@@ -137,3 +137,15 @@ input:read-only {
 .blue::placeholder {
   color: var(--brand-colors-primary-color, #0050D8);
 }
+
+input[type=submit] {
+  text-transform: capitalize;
+  color: #fff;
+  border-radius: 4px;
+  background-color: #0050D8;
+}
+
+.justify-end {
+  justify-content: flex-end;
+  width: 85%;
+}
